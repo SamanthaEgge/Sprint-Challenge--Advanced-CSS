@@ -167,23 +167,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header .title {
+.nav-content {
+  /**
+    position: sticky;
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+    **/
+}
+.nav-content .title {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-header .title h1 {
+.nav-content .title h1 {
   font-size: 40px;
 }
-header nav {
+.nav-content nav {
   display: flex;
   justify-content: center;
 }
-header nav a {
+.nav-content nav a {
   text-decoration: none;
   padding: 10px 20px 10px 20px;
 }
-header nav h2 {
+.nav-content nav h2 {
   font-size: 18px;
   font-family: 'Ubuntu';
   color: #5E6164;
@@ -346,13 +354,25 @@ footer {
   padding-top: 15px;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .home .aboutus-content {
+    flex-direction: column;
+  }
+}
 .home .aboutus-content .info-section {
   max-width: 31%;
+}
+@media (max-width: 500px) {
+  .home .aboutus-content .info-section {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 }
 .home .aboutus-content .info-section img {
   max-width: 60%;
   border-radius: 6px;
-  margin: 0 auto;
+  margin-left: 15%;
 }
 .home .aboutus-content .info-section h2 {
   padding-top: 10px;

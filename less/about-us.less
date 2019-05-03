@@ -54,14 +54,23 @@
         padding-top:15px;
         margin-bottom: 15px;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         .info-section {
             max-width: 31%;
+
+            @media @phone {
+                max-width: 95%;
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
 
             img {
                 max-width: 60%;
                 border-radius: 6px;
-                margin:0 auto;
-                
+                margin-left: 15%;
             }
 
             h2 {
