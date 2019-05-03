@@ -2,6 +2,8 @@
 
 .home {
 
+    overflow:hidden;
+
     .intro {
   
       h2 {
@@ -25,6 +27,23 @@
         margin-top: 15px;
         padding-bottom: 15px;
         .border-content();
+        animation-name: rocketblast;
+        animation-delay: 0s;
+        animation-duration: 7s;
+        animation-timing-function: ease-in;
+
+    }
+
+    @keyframes rocketblast {
+        from {
+            margin-left: -100%;
+            width: 800%;
+        }
+
+        to {
+            margin-left:0%;
+            width: 100%;
+        }
 
     }
 
@@ -41,7 +60,7 @@
             img {
                 max-width: 60%;
                 border-radius: 6px;
-                margin: 0 auto;
+                margin:0 auto;
                 
             }
 

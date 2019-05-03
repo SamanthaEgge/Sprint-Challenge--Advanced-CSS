@@ -305,6 +305,9 @@ footer {
   border-radius: 10px;
 }
 /*** About Us ***/
+.home {
+  overflow: hidden;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -321,6 +324,20 @@ footer {
   margin-top: 15px;
   padding-bottom: 15px;
   border-top: 1px solid #dee2e6;
+  animation-name: rocketblast;
+  animation-delay: 0s;
+  animation-duration: 7s;
+  animation-timing-function: ease-in;
+}
+@keyframes rocketblast {
+  from {
+    margin-left: -100%;
+    width: 800%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .home .aboutus-content {
   display: flex;
