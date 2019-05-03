@@ -304,3 +304,14 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+/*** About Us ***/
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro img {
+  max-width: 100%;
+  border-radius: 6px;
+}
