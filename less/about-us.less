@@ -19,4 +19,48 @@
     
     }
 
+    .rocket-img {
+        max-width: 100%;
+        padding-top: 15px;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        .border-content();
+
+    }
+
+    .aboutus-content {
+        display: flex;
+        justify-content: space-between;
+        .border-content();
+        padding-top:15px;
+        margin-bottom: 15px;
+
+        .info-section {
+            max-width: 31%;
+
+            img {
+                max-width: 60%;
+                border-radius: 6px;
+                margin: 0 auto;
+                
+            }
+
+            h2 {
+                padding-top: 10px;
+            }
+
+            p {
+                padding-top: 10px;
+            }
+
+            .aboutus-button {
+                .button-style(100%,@waterloo);
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: @ebony-clay;
+                }
+            }
+        }
+    }
 }

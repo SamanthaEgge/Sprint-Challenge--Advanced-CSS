@@ -315,3 +315,46 @@ footer {
   max-width: 100%;
   border-radius: 6px;
 }
+.home .rocket-img {
+  max-width: 100%;
+  padding-top: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #dee2e6;
+}
+.home .aboutus-content {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dee2e6;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.home .aboutus-content .info-section {
+  max-width: 31%;
+}
+.home .aboutus-content .info-section img {
+  max-width: 60%;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.home .aboutus-content .info-section h2 {
+  padding-top: 10px;
+}
+.home .aboutus-content .info-section p {
+  padding-top: 10px;
+}
+.home .aboutus-content .info-section .aboutus-button {
+  width: 100%;
+  background-color: #81848E;
+  color: #F1F1F1;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.home .aboutus-content .info-section .aboutus-button:hover {
+  background-color: #23293B;
+}
