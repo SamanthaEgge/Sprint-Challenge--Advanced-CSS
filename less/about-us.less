@@ -1,0 +1,94 @@
+/*** About Us ***/
+
+.home {
+
+    overflow:hidden;
+
+    .intro {
+  
+      h2 {
+        padding: 15px;
+      }
+  
+      p {
+        padding:0 15px;
+      }
+  
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+    
+    }
+
+    .rocket-img {
+        max-width: 100%;
+        padding-top: 15px;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        .border-content();
+        animation-name: rocketblast;
+        animation-delay: 0s;
+        animation-duration: 7s;
+        animation-timing-function: ease-in;
+
+    }
+
+    @keyframes rocketblast {
+        from {
+            margin-left: -100%;
+            width: 800%;
+        }
+
+        to {
+            margin-left:0%;
+            width: 100%;
+        }
+
+    }
+
+    .aboutus-content {
+        display: flex;
+        justify-content: space-between;
+        .border-content();
+        padding-top:15px;
+        margin-bottom: 15px;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .info-section {
+            max-width: 31%;
+
+            @media @phone {
+                max-width: 95%;
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
+
+            img {
+                max-width: 60%;
+                border-radius: 6px;
+                margin-left: 15%;
+            }
+
+            h2 {
+                padding-top: 10px;
+            }
+
+            p {
+                padding-top: 10px;
+            }
+
+            .aboutus-button {
+                .button-style(100%,@waterloo);
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: @ebony-clay;
+                }
+            }
+        }
+    }
+}
